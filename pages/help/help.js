@@ -2,29 +2,24 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Bludi</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div className="container">
+            <Head>
+                <title>Bludi</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-      <main>
-        <h1 className="title">
-         Hola usuario bienvenido a <a href="https://github.com/Bludi-development">Bludi development!</a>
-        </h1>
+            <main>
+                <h1 className="title">
+                    Hola usuario bienvenido a <a href="https://github.com/Bludi-development">Bludi development!</a>
+                </h1>
 
-        <p className="description">
-          Puedes contactarnos a traves de discord! <code>Patricio Sherik#1092</code>
-        </p>
-          <div className='help'>
-          <Link href="/help/help">
-            <button title="Ayuda"></button>
-          </Link>
-          </div>
-      </main>
+                <p className="description">
+                   Si necesitas ayuda Puedes contactarnos a traves de discord! <code>Patricio Sherik#1092</code>
+                </p>
+            </main>
 
-      <style jsx>{`
+            <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -155,7 +150,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
+            <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -169,6 +164,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
+        </div>
+    )
 }
